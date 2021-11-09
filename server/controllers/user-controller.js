@@ -125,7 +125,7 @@ registerUser = async (req, res) => {
 }
 logoutUser = async (req, res) => {
     try{
-        await res.clearCook("token").status(200).json({
+        await res.clearCookie("token").status(200).json({
             success: true
         })
     }
