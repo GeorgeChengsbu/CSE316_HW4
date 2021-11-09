@@ -254,6 +254,8 @@ input {
 }
 
 .disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
   background-color: lightgray;
 }
 

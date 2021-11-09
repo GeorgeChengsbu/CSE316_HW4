@@ -27,15 +27,18 @@ function EditToolbar() {
     if (store.isListNameEditActive) {
         editStatus = true;
     }  
+    console.log(editStatus);
     return (
         <div id="edit-toolbar">
             <Button 
+                disabled={editStatus}
                 id='undo-button'
                 onClick={handleUndo}
                 variant="contained">
                     <UndoIcon />
             </Button>
             <Button 
+                disabled={editStatus}
                 id='redo-button'
                 onClick={handleRedo}
                 variant="contained">

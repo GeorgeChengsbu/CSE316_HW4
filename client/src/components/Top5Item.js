@@ -65,6 +65,7 @@ function Top5Item(props) {
     if (store.isItemEditActive) {
         editStatus = true;
     }
+    console.log(editStatus);
     function handleKeyPress(event) {
         if (event.code === "Enter") {
             let index = event.target.id.substring("list-".length);
