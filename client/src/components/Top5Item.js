@@ -130,7 +130,7 @@ style={{
                 className={itemClass}
                 onKeyPress={handleKeyPress}
                 onChange={handleUpdateText}
-                defaultValue={props.name}
+                defaultValue={props.text}
                 inputProps={{style: {fontSize: 48}}}
                 InputLabelProps={{style: {fontSize: 24}}}
                 autoFocus
