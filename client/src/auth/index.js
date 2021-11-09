@@ -93,7 +93,8 @@ function AuthContextProvider(props) {
         const response = await api.logoutUser();
         if (response.status === 200){
             authReducer({
-                type: AuthActionType.LOGGING_OUT
+                type: AuthActionType.LOGGING_OUT,
+                payload: null
             })
         }
     }
