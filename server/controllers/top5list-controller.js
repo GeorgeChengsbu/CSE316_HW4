@@ -45,7 +45,7 @@ updateTop5List = async (req, res) => {
     Top5List.findOne({ _id: req.params.id }, (err, top5List) => {
         console.log("top5List found: " + JSON.stringify(top5List));
         if (err) {
-            return res.status(404).json({
+            return res.status().json({
                 err,
                 message: 'Top 5 List not found!',
             })
