@@ -125,7 +125,7 @@ style={{
                 required
                 fullWidth
                 id={'item-' +(index+1)}
-                label="Top 5 List Name"
+                label={"List Item #" +(index +1)}
                 name="name"
                 autoComplete="Top 5 List Name"
                 className={itemClass}
